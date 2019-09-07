@@ -1,0 +1,65 @@
+https://git-scm.com/book/ru/v1
+
+1. Создание репозитория в существующем каталоге:
+$ git init
+
+2. Добавление всех файлов и каталогов в список версионного контроля:
+$ git add --all
+
+3. Фиксация первоначальной версии:
+	$ git commit -m 'initial project version'
+
+4. Клонирование существующего репозитория:
+	$ git clone git://github.com/ownerName/repName.git [myRepName]
+
+5. Отслеживание измененных файлов: 
+	$ git status
+
+6. Игнорирование файлов (исключение из списка отслеживаемых) - файл .gitignore:
+	$ cat .gitignore
+	*.[oa]
+	*~
+
+7. Фиксация изменений:
+	git commit -m "Name of commitment"
+
+8. Удаление файлов из индексации:
+	git rm --cached filename
+
+9. Перемещение (переименование) файлов:
+	$ git mv file_from file_to
+
+10. Просмотр истории коммитов:
+	$ git log
+
+11. Изменение последнего коммита:
+	$ git commit -m 'initial commit'
+	$ git add forgotten_file
+	$ git commit --amend
+
+12. Отмена индексации файла:
+	git reset HEAD filename
+	
+13. Отмена изменений файла:
+	git checkout -- filename
+	
+14. Отображение удалённых репозиториев:
+	$ git remote -v
+
+15. Добавление удалённых репозиториев:
+	git remote add [сокращение] [url]
+
+16. Получения данных из удалённых проектов:
+	$ git fetch [имя удал. сервера]
+	
+17. Отправка данных на удаленный репозиторий:
+	git push [удал. сервер] [ветка]
+	
+18. Создание и переход на новую ветки:
+	$ git branch branchName
+	$ git checkout branchName
+	
+
+
+
+
